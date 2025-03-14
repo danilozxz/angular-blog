@@ -1,16 +1,32 @@
-<app-menu-bar></app-menu-bar>
 
 <div class="mb-8">
     <app-menu-title></app-menu-title>
 </div>
 
-<div class="grid grid-cols-1 sm:grid-cols-2 sm:gap-16">
+<div class="grid grid-cols-1 sm:grid-cols-2 sm:gap-16 md:w-[80%] mx-auto">
     <div>
-        <app-big-card></app-big-card>
+        <app-big-card
+            id="1"
+            photoCover="https://img-c.udemycdn.com/course/750x422/2919556_498a.jpg"
+            cardTitle="Spring boot lidera no ranking pernambucano"
+            descriptionTitle="O Spring Boot é o framework back-end mais utilizado pelos desenvolvedores pernambucanos devido à sua facilidade de configuração, alta performance e suporte robusto para a criação de APIs REST. Sua arquitetura modular, aliada à integração com bancos de dados e segurança avançada, torna-o a escolha ideal para startups e grandes empresas na região. Com uma comunidade ativa e forte presença no mercado local, o Spring Boot se destaca como a principal tecnologia para desenvolvimento de sistemas escaláveis em Pernambuco."
+        ></app-big-card>
     </div>
     <div class="mt-8 sm:mt-0">
-        <app-small-card></app-small-card>
-        <app-small-card></app-small-card>
-        <app-small-card></app-small-card>
+        <app-small-card
+            id="2"
+            photoCover="https://cdn.thexcodes.com/imgs/reactJS.png"
+            cardTitle="React é um dos SPA's mais utilizados"
+        ></app-small-card>
+        <app-small-card
+            id="3"
+            photoCover="https://midias.inforchannel.com.br/wp-content/uploads/2023/02/Github-Top-10-linguagens-de-programacao-1024x576.jpg"
+            cardTitle="Linguagens de programação mais rápidas "
+        ></app-small-card>
+        <app-small-card
+            id="4"
+            photoCover="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQtk570HKSLfdmQRKnVqujHuI63zpyZDnnCJg&s"
+            cardTitle="Conheça a ferramenta GITHUB"
+        ></app-small-card>
     </div>
 </div>
