@@ -2,16 +2,16 @@
 <div>
     <div>
         <img 
-            src="https://t4.ftcdn.net/jpg/05/17/53/57/360_F_517535712_q7f9QC9X6TQxWi6xYZZbMmw5cnLMr279.jpg" 
+            src="{{photoCover}}" 
             alt="placeholder"
-            class="w-full h-48 sm:h-[400px] object-cover"
+            class="w-full h-48 md:h-80 object-cover rounded-lg"
         >
     </div>
     <span class="text-zinc-500 text-sm">Março, 13 2025</span>
     <div>
-        <h1><a href="#" class="text-2xl font-bold cursor-pointer">Danilo está desenvolvendo em Angular</a></h1>
+        <a [routerLink]="['content', id]" class="text-2xl font-bold cursor-pointer">{{ cardTitle }}</a>
     </div>
     <div>
-        <p class="text-zinc-500">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Delectus magni perspiciatis excepturi aspernatur. Voluptatibus molestiae beatae voluptatem fugiat..</p>
+        <p class="text-zinc-500 line-clamp-2">{{ descriptionTitle }}</p>
     </div>
 </div>
