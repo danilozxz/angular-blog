@@ -1,1 +1,19 @@
 /* You can add global styles to this file, and also import other style files */
+@import "tailwindcss";
+
+* {
+    box-sizing: border-box;
+    background-color: #111111;
+    font-family: 'Segoe UI';
+}
+
+body {
+    margin: 4px auto;
+    color: white;
+    max-width: 1600px;
+    padding: 0 32px;
+}
+
+@media (width <= 40rem /* 640px */) {
+   body {padding: 0 8px;}
+}
